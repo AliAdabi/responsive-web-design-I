@@ -1,10 +1,4 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,24 +56,25 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 /* Your code starts here! */
-* {
-    box-sizing: border-box;
-}
+
+
 .container{
     margin: 0 auto;
     width: 900px;
 }
 header {
+	display: flex;
     padding: 20px 0;
 }
 header nav {
-    display: inline-block;
+	display: flex;
     width: 600px;
     vertical-align: top;
     padding-top: 15px;  
 }
 header nav a {
-    display: inline; 
+	display: flex;
+	justify-content: space-evenly;
     padding-right: 47px;
     font-size: 15px;
     text-decoration: none;
@@ -88,7 +83,6 @@ header nav a {
 }
 header img {
     width: 275px;
-    display: inline;
     padding-left: 50px;
 }
 .section1 {
@@ -119,16 +113,21 @@ section a {
     margin-bottom: 50px;
 }
 .features-about {
-    display: inline-block;
-    width: 445px;
+	justify-content: space-between;
+    width: 46%;
     padding: 30px 0;
 }
 .below-image {
-    display: inline-block;
-    width: 297px;
+
+    
+    width: 30%;
     padding: 30px 5px;
 }
 .center-section {
+	width : 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
     border-top: 2px solid lightgray;
     border-bottom: 2px solid black;
     padding: 15px 0;
@@ -140,7 +139,77 @@ footer a {
     text-decoration: none;
     color: black;
 }
+.foot p{
+	text-align: left;
+	
+}
 footer h6 {
     text-align: center;
     padding-top: 30px;
+}
+/* we start the second page styling here */
+.serviceHead{
+	display: flex;
+	/* justify-content: space-between; */
+}
+.serviceHead .navbar{
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.navbar a{
+	display: flex;
+	justify-content: space-evenly;
+}
+.serviceimage1{
+	display: flex;
+	justify-content: center;
+}
+.servicesTop{
+	
+	margin-left: 100px;
+	width : 80%;
+	margin-left: 50px;
+}
+.middle{
+	border-top: 1px solid gray;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90%;
+	/* border: solid red; */
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.middle div{
+	padding: 20px;
+	margin : 40px;
+	background-color: rgb(209, 218, 218);
+	width: 40%;
+}
+.middle div a{
+	margin: 10px;
+	background-color: teal;
+
+}
+.bottomC{
+	border-top:1px solid black ;
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content:space-evenly ;
+	
+}
+
+.bottomC .botdes {
+width: 40%;
+
+}
+.bottomC .botimg{
+	
+	margin:5px;
+}
+footer p{
+	text-align: center;
 }
