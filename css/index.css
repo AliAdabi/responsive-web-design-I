@@ -213,3 +213,56 @@ width: 40%;
 footer p{
 	text-align: center;
 }
+
+
+@media(max-width : 500px){
+header{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    }
+header nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+header nav a{
+    max-width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+}
+.section1{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+}
+.header-img{
+    display: none;
+}
+
+.middle-img{
+    width: 500px;
+}
+.center-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.below-image{
+    width: 50%;
+}
+.foot{
+    margin-left: 30px;
+}
+
+}
+
+
+
